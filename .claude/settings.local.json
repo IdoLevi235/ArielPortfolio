@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-Content *)",
+      "PowerShell(Get-Content \"C:\\\\Users\\\\idol\\\\ArielPortfolio\\\\ariel_levi_portfolio.html\" | Select-Object -Skip 1 -First 347 | Where-Object { $_ -notmatch 'base64' } | Select-Object -First 250)",
+      "PowerShell(Get-Content \"C:\\\\Users\\\\idol\\\\ArielPortfolio\\\\ariel_levi_portfolio.html\" | Select-Object -Skip 511 -First 210 | Where-Object { $_ -notmatch 'base64' })",
+      "PowerShell(npm *)",
+      "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 15 ; Write-Output \"Status: $\\($r.StatusCode\\)\" ; Write-Output \"Title: $\\(\\($r.Content | Select-String -Pattern '<title>\\([^<]+\\)' | ForEach-Object { $_.Matches[0].Groups[1].Value }\\) -join '' \\)\")",
+      "Read(//mnt/c/Users/idol/AppData/Local/Temp/claude/C--Users-idol-ArielPortfolio/c864a7cb-455d-4adb-87a6-f95b97ba14ad/tasks/**)",
+      "PowerShell($pages = @\\(\"http://localhost:3000\", \"http://localhost:3000/ads\", \"http://localhost:3000/personal\", \"http://localhost:3000/admin\", \"http://localhost:3000/api/content\"\\) ; foreach \\($url in $pages\\) { try { $r = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 20; Write-Output \"$\\($r.StatusCode\\) $url\" } catch { Write-Output \"ERROR $url : $\\($_.Exception.Message\\)\" } })",
+      "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:3000/api/content\" -UseBasicParsing -TimeoutSec 10 ; $json = $r.Content | ConvertFrom-Json ; Write-Output \"Site name: $\\($json.site.name\\)\" ; Write-Output \"Bezalel projects: $\\($json.bezalel.projects.Count\\)\" ; Write-Output \"Ads groups: $\\($json.ads.groups.Count\\)\")",
+      "Bash(gh auth *)"
+    ]
+  }
+}
