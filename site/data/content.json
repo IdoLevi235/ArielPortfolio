@@ -1,0 +1,260 @@
+{
+  "site": {
+    "name": "Ariel Levi",
+    "email": "arielefraim5@gmail.com",
+    "linkedin": "http://linkedin.com/in/ariel-efraim-0912641aa",
+    "instagram": "https://www.instagram.com/ariel__ef/",
+    "footerYear": "2025"
+  },
+  "home": {
+    "hero": {
+      "nameLines": ["Ariel", "Levi"],
+      "subtitle": "Video editor, motion designer & graphic designer based in Haifa. Creative Lead at Kendago.",
+      "cta": "View Work ↓"
+    },
+    "about": {
+      "paragraphs": [
+        "Hello! My name is Ariel.",
+        "I studied Visual Communication at Bezalel Academy of Arts and Design (2017–2021).",
+        "I'm passionate about storytelling through video editing, motion design, graphic design, image-making, and film. I love bringing ideas to life with bold visuals and thoughtful movement."
+      ]
+    },
+    "skills": ["After Effects", "Premiere", "Illustrator", "Photoshop", "Indesign", "AI Tools"],
+    "sections": [
+      {
+        "id": "ads",
+        "label": "Ads",
+        "title": "Performance Video Ads",
+        "description": "Here's a selection of ads I've created over the years. I love blending motion, visuals, and just the right amount of marketing magic to tell stories that grab attention and get real results.",
+        "cta": "View Ads",
+        "href": "/ads",
+        "flip": false
+      },
+      {
+        "id": "bezalel",
+        "label": "Bezalel",
+        "title": "Bezalel Academy of Arts and Design",
+        "description": "Selected works from my B.Des in Visual Communication — film, motion, graphic design, illustration, photography and more. 2017–2021.",
+        "cta": "View Works",
+        "href": "/bezalel",
+        "flip": true
+      },
+      {
+        "id": "personal",
+        "label": "Personal",
+        "title": "Personal Work",
+        "description": "Just some things I made for fun — exploring motion, design, and whatever caught my curiosity.",
+        "cta": "View Personal",
+        "href": "/personal",
+        "flip": false
+      }
+    ]
+  },
+  "ads": {
+    "title": "Ads",
+    "description": "Here's a selection of ads I've created over the years. As a video editor and marketing designer, I love blending motion, visuals, and just the right amount of marketing magic to tell stories that grab attention and get real results.",
+    "groups": [
+      {
+        "id": "kendago",
+        "label": "Kendago · 2021–Present",
+        "videoIds": [
+          "7ezyeseVwIY", "Lw_FqPFPZdB", "Vk83a5ICcCx", "8cQatIZUiU7",
+          "BmPjyGeSdGp", "JQjk3y9vszF", "6C-bJcB9Lsy", "FVoL6sKFkuy",
+          "GKBBBXBGaWG", "4MwVaw7LkcQ", "4-dBxBv9X9f", "MEIU6jPiERX", "PTSWNxKr6PC"
+        ]
+      },
+      {
+        "id": "lightricks",
+        "label": "Lightricks · 2020–2021",
+        "videoIds": [
+          "92aKAX-ovZ6", "2oEeE4wMu3P", "-z-S327LUPa", "RSSp38vySt8",
+          "Lz_HQgYa96_", "Eyq5g7aeD9Q", "P3XCgyKnJyD", "TDqrMttheVf"
+        ]
+      }
+    ]
+  },
+  "bezalel": {
+    "title": "Bezalel",
+    "description": "Selected works from my B.Des in Visual Communication at Bezalel Academy of Arts and Design — film, motion, graphic design, illustration, photography and more. 2017–2021.",
+    "projects": [
+      {
+        "id": "out-of-sight",
+        "num": "01",
+        "title": "Out of Sight — Final Project",
+        "year": "2021",
+        "category": "Film",
+        "description": "My final project at Bezalel. Animated clip about our dreams — frame by frame technique. The clip emphasizes the stream of consciousness and the irrational randomness we experience in dreams. Based on real dreams.",
+        "videoIds": ["I6PrBomL2NK"],
+        "images": [],
+        "externalLink": null,
+        "isLast": false
+      },
+      {
+        "id": "asgardia",
+        "num": "02",
+        "title": "Asgardia",
+        "year": "2020",
+        "category": "Motion",
+        "description": "Asgardia — a city in the sky. A branding campaign for a micronation event celebrating the relocation to space. What will you take to space? Includes motion, invitation print and flying tickets.",
+        "videoIds": ["IokFuJUGk6k"],
+        "images": [
+          { "type": "placeholder", "label": "Print materials coming soon" },
+          { "type": "placeholder", "label": "Invitation design" },
+          { "type": "placeholder", "label": "Flying ticket" }
+        ],
+        "externalLink": null,
+        "isLast": false
+      },
+      {
+        "id": "banana-fish",
+        "num": "03",
+        "title": "A Perfect Day for Banana Fish",
+        "year": "2020",
+        "category": "Motion",
+        "description": "Title sequence design inspired by J.D. Salinger's short story. Typography, motion and atmosphere.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/a-perfect-day-for-banana-fish-title-sequence" },
+        "isLast": false
+      },
+      {
+        "id": "hitchcock-index",
+        "num": "04",
+        "title": "Hitchcock Drive-in Index",
+        "year": "2021",
+        "category": "Print",
+        "description": "A curated index of Alfred Hitchcock's films — editorial layout and graphic design.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/hitchcock-drive-in" },
+        "isLast": false
+      },
+      {
+        "id": "disney-villains",
+        "num": "05",
+        "title": "Disney Villains Card Game",
+        "year": "2019",
+        "category": "Illustration",
+        "description": "A full set of illustrated cards featuring Disney villains, designed as a playable card game.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/disney-villains-card-game-illustrations" },
+        "isLast": false
+      },
+      {
+        "id": "mgmt-posters",
+        "num": "06",
+        "title": "MGMT Posters",
+        "year": "2020",
+        "category": "Print",
+        "description": "Poster design series inspired by the band MGMT.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/mgmt-posters" },
+        "isLast": false
+      },
+      {
+        "id": "hitchcock-booklet",
+        "num": "07",
+        "title": "Alfred Hitchcock Booklet",
+        "year": "2019",
+        "category": "Print",
+        "description": "A designed booklet exploring the visual language of Alfred Hitchcock's films.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/alfred-hitchcock-booklet" },
+        "isLast": false
+      },
+      {
+        "id": "indira-gandhi",
+        "num": "08",
+        "title": "Indira Gandhi Booklet",
+        "year": "2019",
+        "category": "Print",
+        "description": "A typographic and photographic booklet about the life of Indira Gandhi.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/indira-gandhi-booklet" },
+        "isLast": false
+      },
+      {
+        "id": "illustrated-posters",
+        "num": "09",
+        "title": "Illustrated Movie Posters",
+        "year": "2020",
+        "category": "Illustration",
+        "description": "A series of illustrated posters reimagining classic films.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/illustrated-movie-posters" },
+        "isLast": false
+      },
+      {
+        "id": "psychedelic-zoo",
+        "num": "10",
+        "title": "Psychedelic Zoo",
+        "year": "2020",
+        "category": "Illustration",
+        "description": "Animals reimagined through a psychedelic lens — a series of illustrations.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/psychedelic-zoo" },
+        "isLast": false
+      },
+      {
+        "id": "gifs",
+        "num": "11",
+        "title": "GIFs",
+        "year": "2021",
+        "category": "Motion",
+        "description": "A collection of animated GIFs made during my studies at Bezalel.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/gif-s" },
+        "isLast": true
+      }
+    ]
+  },
+  "personal": {
+    "title": "Personal",
+    "description": "Things I made for myself — no deadlines, no approvals. Just creative curiosity and late-night ideas.",
+    "projects": [
+      {
+        "id": "motion",
+        "num": "01",
+        "title": "Motion",
+        "year": "2025",
+        "category": "Motion",
+        "description": null,
+        "videoIds": ["LpBI8yJMCIX", "-ZSMLSX7Q_9"],
+        "images": [],
+        "externalLink": null,
+        "isLast": false
+      },
+      {
+        "id": "photography",
+        "num": "02",
+        "title": "Photography",
+        "year": "2025",
+        "category": "Film & Digital",
+        "description": "One of my passions is photography. A collection of pictures taken over the years — some are film photography.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload photos via Cloudinary to display here" }],
+        "externalLink": { "label": "View full photography series →", "href": "https://arielefraim.myportfolio.com/photography" },
+        "isLast": false
+      },
+      {
+        "id": "mix",
+        "num": "03",
+        "title": "Mix",
+        "year": "2020–2025",
+        "category": "Mixed",
+        "description": "These are things I made for myself — No deadlines, no approvals — just me, some creative curiosity, and a few late-night ideas that turned into something cool.",
+        "videoIds": [],
+        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary to display here" }],
+        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/mix" },
+        "isLast": true
+      }
+    ]
+  }
+}

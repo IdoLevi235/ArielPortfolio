@@ -1,0 +1,70 @@
+.page {
+  min-height: calc(100vh - 52px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px var(--page-pad);
+}
+
+.card {
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+
+.icon {
+  font-size: 32px;
+  color: var(--pink);
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.desc {
+  font-size: 13px;
+  color: var(--ink-mid);
+  line-height: 1.9;
+  margin-bottom: 32px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  background: var(--cream-dark);
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--ink-mid);
+}
+
+.featureIcon {
+  width: 20px;
+  text-align: center;
+  color: var(--pink);
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.status {
+  font-size: 11px;
+  color: var(--ink-faint);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

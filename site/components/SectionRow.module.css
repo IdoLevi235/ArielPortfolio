@@ -1,0 +1,134 @@
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 0.5px solid var(--border);
+  min-height: 220px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.row:hover .imgInner {
+  filter: blur(6px) brightness(0.85);
+}
+
+.row:hover .label {
+  opacity: 1;
+}
+
+/* ── Image side ── */
+.img {
+  position: relative;
+  overflow: hidden;
+  border-right: 0.5px solid var(--border);
+  background: var(--cream-darker);
+}
+
+.flip .img {
+  border-right: none;
+  border-left: 0.5px solid var(--border);
+  order: 2;
+}
+
+.flip .info {
+  order: 1;
+}
+
+.imgInner {
+  position: absolute;
+  inset: 0;
+  background: var(--cream-darker);
+  filter: blur(8px) brightness(0.9);
+  transform: scale(1.08);
+  transition: filter 0.3s;
+}
+
+.labelOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.label {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 38px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink);
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  letter-spacing: -0.01em;
+}
+
+/* ── Info side ── */
+.info {
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.infoDesc {
+  font-size: 12px;
+  color: var(--ink-mid);
+  line-height: 1.9;
+}
+
+.infoLink {
+  margin-top: 18px;
+  font-size: 10px;
+  color: var(--pink);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.infoLink::after {
+  content: '→';
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .img {
+    height: 160px;
+    border-right: none;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .flip .img {
+    order: 0;
+    border-left: none;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .flip .info {
+    order: 1;
+  }
+
+  .info {
+    padding: 24px var(--page-pad-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .info {
+    padding: 20px var(--page-pad-xs);
+  }
+}
