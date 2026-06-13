@@ -1,0 +1,133 @@
+.wrap {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.preview {
+  width: 104px;
+  height: 128px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 0.5px solid var(--border);
+  overflow: hidden;
+  background: var(--cream-darker);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder {
+  font-size: 10px;
+  color: var(--ink-faint);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.btnRow {
+  display: flex;
+  gap: 8px;
+}
+
+.uploadBtn {
+  padding: 8px 14px;
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  background: var(--cream-dark);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.uploadBtn:hover:not(:disabled) {
+  border-color: var(--ink-mid);
+  background: var(--cream-darker);
+}
+
+.uploadBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.removeBtn {
+  padding: 8px 14px;
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink-mid);
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.removeBtn:hover:not(:disabled) {
+  border-color: #c0392b;
+  color: #c0392b;
+  background: #fff5f5;
+}
+
+.altLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.altLabelText {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink-faint);
+}
+
+.altInput {
+  width: 100%;
+  padding: 7px 10px;
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  background: var(--cream);
+}
+
+.altInput:focus {
+  outline: none;
+  border-color: var(--pink);
+  background: white;
+}
+
+.error {
+  font-size: 12px;
+  color: #c0392b;
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--ink-faint);
+  line-height: 1.5;
+}

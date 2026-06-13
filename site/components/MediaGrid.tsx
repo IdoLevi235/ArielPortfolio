@@ -49,12 +49,14 @@ export default function MediaGrid({ items, label, section = false }: MediaGridPr
 }
 
 function MediaCell({ item }: { item: MediaItem }) {
+  let media: React.ReactNode;
+  let caption: string | undefined;
+
   if (item.kind === 'image') {
     // eslint-disable-next-line @next/next/no-img-element
-    return <img src={item.url} alt={item.alt ?? ''} className={styles.img} />;
-  }
-  if (item.kind === 'video') {
-    return (
+    media = <img src={item.url} alt={item.alt ?? ''} className={styles.img} />;
+  } else if (item.kind === 'video') {
+    media = (
       <video
         className={styles.video}
         src={item.url}
@@ -63,6 +65,18 @@ function MediaCell({ item }: { item: MediaItem }) {
         preload="none"
       />
     );
+    caption = item.caption;
+  } else {
+    media = <LazyIframe src={embedSrc(item)} title={item.caption ?? `Video ${item.id}`} />;
+    caption = item.caption;
   }
-  return <LazyIframe src={embedSrc(item)} title={item.caption ?? `Video ${item.id}`} />;
+
+  if (!caption) return media;
+
+  return (
+    <figure className={styles.figure}>
+      {media}
+      <figcaption className={styles.caption}>{caption}</figcaption>
+    </figure>
+  );
 }

@@ -18,7 +18,8 @@ import {
   arrayMove,
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-import type { Content, HomeSection } from '@/types';
+import type { Content, HomeSection, ImageRef } from '@/types';
+import HeroPhotoField from '../HeroPhotoField';
 import styles from '../editors.module.css';
 
 type HomeData = Content['home'];
@@ -195,6 +196,10 @@ export default function HomeEditor({ home, onChange }: HomeEditorProps) {
     onChange({ ...home, hero: { ...home.hero, nameLines } });
   }
 
+  function updateHeroPhoto(photo?: ImageRef) {
+    onChange({ ...home, hero: { ...home.hero, photo } });
+  }
+
   // About paragraphs
   const paragraphIds = home.about.paragraphs.map((_, i) => `para-${i}`);
 
@@ -311,6 +316,10 @@ export default function HomeEditor({ home, onChange }: HomeEditorProps) {
               placeholder="e.g. View Work ↓"
             />
           </label>
+          <div className={`${styles.field} ${styles.fieldFull}`}>
+            <span className={styles.fieldLabel}>Hero photo</span>
+            <HeroPhotoField photo={home.hero.photo} onChange={updateHeroPhoto} />
+          </div>
         </div>
       </section>
 

@@ -19,6 +19,7 @@ export default function HomePage() {
         nameLines={home.hero.nameLines}
         subtitle={home.hero.subtitle}
         cta={home.hero.cta}
+        photo={home.hero.photo}
       />
 
       <section id="about" className={styles.twoCol} aria-label="About and Skills">

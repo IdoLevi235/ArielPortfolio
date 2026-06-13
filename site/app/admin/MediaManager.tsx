@@ -19,6 +19,7 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import type { MediaItem } from '@/types';
+import { uploadFile, toMediaItem } from './cloudinaryUpload';
 import styles from './MediaManager.module.css';
 
 interface MediaManagerProps {
@@ -29,54 +30,13 @@ interface MediaManagerProps {
 }
 
 // ─────────────────────────────────────────────────────────────
-// Upload helper
+// Upload helper (delegates to the shared Cloudinary uploader)
 // ─────────────────────────────────────────────────────────────
 async function uploadToCloudinary(
   file: File,
   onProgress?: (pct: number) => void
 ): Promise<MediaItem> {
-  const sign = await fetch('/api/upload-sign', {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({}),
-  }).then((r) => r.json());
-
-  const form = new FormData();
-  form.append('file', file);
-  form.append('api_key', sign.apiKey);
-  form.append('timestamp', String(sign.timestamp));
-  form.append('signature', sign.signature);
-  form.append('folder', sign.folder);
-
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', `https://api.cloudinary.com/v1_1/${sign.cloudName}/auto/upload`);
-    xhr.upload.addEventListener('progress', (e) => {
-      if (e.lengthComputable && onProgress) {
-        onProgress(Math.round((e.loaded / e.total) * 100));
-      }
-    });
-    xhr.addEventListener('load', () => {
-      if (xhr.status >= 200 && xhr.status < 300) {
-        const up = JSON.parse(xhr.responseText);
-        const item: MediaItem =
-          up.resource_type === 'video'
-            ? { kind: 'video', url: up.secure_url, publicId: up.public_id }
-            : {
-                kind: 'image',
-                url: up.secure_url,
-                publicId: up.public_id,
-                width: up.width,
-                height: up.height,
-              };
-        resolve(item);
-      } else {
-        reject(new Error(`Upload failed: ${xhr.status}`));
-      }
-    });
-    xhr.addEventListener('error', () => reject(new Error('Upload network error')));
-    xhr.send(form);
-  });
+  return toMediaItem(await uploadFile(file, onProgress));
 }
 
 // ─────────────────────────────────────────────────────────────

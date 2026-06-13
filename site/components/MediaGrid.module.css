@@ -38,6 +38,20 @@
   display: block;
 }
 
+.figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.caption {
+  font-size: 12px;
+  color: var(--ink-faint);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
 .img {
   cursor: pointer;
   transition: opacity 0.2s;

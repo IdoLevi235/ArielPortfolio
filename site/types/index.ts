@@ -46,6 +46,13 @@ export type MediaItem =
       caption?: string;
     };
 
+/** A single uploaded image referenced by URL (e.g. the hero portrait). */
+export interface ImageRef {
+  url: string;
+  publicId?: string;
+  alt?: string;
+}
+
 export interface VideoGroup {
   id: string;
   label: string;
@@ -71,7 +78,7 @@ export interface Project {
 export interface Content {
   site: SiteConfig;
   home: {
-    hero: { nameLines: string[]; subtitle: string; cta: string };
+    hero: { nameLines: string[]; subtitle: string; cta: string; photo?: ImageRef };
     about: { paragraphs: string[] };
     skills: string[];
     sections: HomeSection[];

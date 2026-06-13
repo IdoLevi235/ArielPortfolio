@@ -31,6 +31,7 @@ export default function PreviewPane({ content, tab }: PreviewPaneProps) {
               nameLines={content.home.hero.nameLines}
               subtitle={content.home.hero.subtitle}
               cta={content.home.hero.cta}
+              photo={content.home.hero.photo}
             />
             <div className={styles.previewSection}>
               <div className={styles.aboutCols}>

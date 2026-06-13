@@ -107,6 +107,13 @@ export const ContentSchema = z.object({
       nameLines: z.array(z.string()),
       subtitle: z.string(),
       cta: z.string(),
+      photo: z
+        .object({
+          url: z.string(),
+          publicId: z.string().optional(),
+          alt: z.string().optional(),
+        })
+        .optional(),
     }),
     about: z.object({
       paragraphs: z.array(z.string()),
