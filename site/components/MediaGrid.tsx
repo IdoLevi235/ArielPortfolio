@@ -75,8 +75,8 @@ function MediaCell({ item }: { item: MediaItem }) {
 
   return (
     <figure className={styles.figure}>
-      {media}
       <figcaption className={styles.caption}>{caption}</figcaption>
+      {media}
     </figure>
   );
 }
