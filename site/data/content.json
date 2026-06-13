@@ -17,7 +17,7 @@
     },
     "about": {
       "paragraphs": [
-        "Hello! My name is Ariel.",
+        "Hello! My name is Ariel. BLA BLA BLA",
         "I studied Visual Communication at Bezalel Academy of Arts and Design (2017–2021).",
         "I'm passionate about storytelling through video editing, motion design, graphic design, image-making, and film. I love bringing ideas to life with bold visuals and thoughtful movement."
       ]
@@ -80,7 +80,8 @@
           {
             "kind": "embed",
             "provider": "adobe",
-            "id": "7ezyeseVwIY"
+            "id": "7ezyeseVwIY",
+            "caption": ""
           },
           {
             "kind": "embed",
@@ -187,6 +188,14 @@
             "kind": "embed",
             "provider": "adobe",
             "id": "TDqrMttheVf"
+          },
+          {
+            "kind": "image",
+            "url": "https://res.cloudinary.com/damfqqsid/image/upload/v1781367164/ariel-portfolio/mpsuwfrupsrfl3ti7b2w.png",
+            "publicId": "ariel-portfolio/mpsuwfrupsrfl3ti7b2w",
+            "alt": "test test test!!",
+            "width": 616,
+            "height": 436
           }
         ]
       }

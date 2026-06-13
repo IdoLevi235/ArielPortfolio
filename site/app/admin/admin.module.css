@@ -141,6 +141,30 @@
   transform: scale(0.97);
 }
 
+/* ── Discard changes ── */
+.discardBtn {
+  padding: 7px 12px;
+  border: 0.5px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  background: transparent;
+  color: rgba(255,255,255,0.55);
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.discardBtn:hover:not(:disabled) {
+  border-color: rgba(231,76,60,0.6);
+  color: #ff6b5b;
+}
+
+.discardBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 /* ── Sign out ── */
 .signOutBtn {
   padding: 7px 12px;

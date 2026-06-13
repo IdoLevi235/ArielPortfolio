@@ -23,6 +23,8 @@ const TABS: { id: Tab; label: string }[] = [
 
 export default function AdminApp() {
   const [content, setContent] = useState<Content | null>(null);
+  // Pristine snapshot of the last loaded / published content, for "Discard".
+  const [baseline, setBaseline] = useState<Content | null>(null);
   const [activeTab, setActiveTab] = useState<Tab>('home');
   const [dirty, setDirty] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -38,6 +40,7 @@ export default function AdminApp() {
       .then((r) => r.json())
       .then((data: Content) => {
         setContent(data);
+        setBaseline(structuredClone(data));
         setLoading(false);
       })
       .catch((err) => {
@@ -84,12 +87,22 @@ export default function AdminApp() {
       } else {
         setDirty(false);
         setSaveSuccess(true);
+        setBaseline(structuredClone(content));
       }
     } catch {
       setError('Network error. Please check your connection and try again.');
     } finally {
       setSaving(false);
     }
+  }
+
+  function handleDiscard() {
+    if (!baseline || !dirty || saving) return;
+    if (!window.confirm('Discard all unsaved changes and revert to the last saved version?')) return;
+    setContent(structuredClone(baseline));
+    setDirty(false);
+    setError(null);
+    setSaveSuccess(false);
   }
 
   function handleSignOut() {
@@ -129,6 +142,16 @@ export default function AdminApp() {
             />
             <span className={styles.previewLabel}>Preview</span>
           </label>
+
+          {dirty && (
+            <button
+              className={styles.discardBtn}
+              onClick={handleDiscard}
+              disabled={saving}
+            >
+              Discard changes
+            </button>
+          )}
 
           <button
             className={`${styles.publishBtn} ${canPublish ? styles.publishBtnActive : ''}`}
