@@ -6,10 +6,11 @@ import { useState, useEffect } from 'react';
 import styles from './Nav.module.css';
 
 const navLinks = [
-  { href: '/',         label: 'About' },
-  { href: '/ads',      label: 'Ads' },
-  { href: '/bezalel',  label: 'Bezalel' },
-  { href: '/personal', label: 'Personal' },
+  { href: '/',             label: 'About' },
+  { href: '/ads',          label: 'Ads' },
+  { href: '/bezalel',      label: 'Bezalel' },
+  { href: '/personal',     label: 'Personal' },
+  { href: '/photography',  label: 'Photography' },
 ];
 
 export default function Nav() {

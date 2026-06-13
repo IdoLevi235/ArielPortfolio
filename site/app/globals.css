@@ -11,11 +11,17 @@
   --ink-faint: #A89B90;
   --border: rgba(26, 20, 16, 0.1);
 
-  --max-width: 1280px;
+  --max-width: 70vw;
   --nav-height: 52px;
   --page-pad: 48px;
   --page-pad-sm: 24px;
   --page-pad-xs: 16px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --max-width: 100%;
+  }
 }
 
 /* ── Reset ── */
@@ -32,9 +38,15 @@ html {
 
 html, body {
   min-height: 100%;
-  background: var(--cream);
+  background: linear-gradient(to right, #F0DCE3, var(--cream) 18%, var(--cream) 82%, #F0DCE3);
   color: var(--ink);
   overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+  html, body {
+    background: var(--cream);
+  }
 }
 
 body {

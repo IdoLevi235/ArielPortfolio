@@ -8,8 +8,11 @@
   },
   "home": {
     "hero": {
-      "nameLines": ["Ariel", "Levi"],
-      "subtitle": "Video editor, motion designer & graphic designer based in Haifa. Creative Lead at Kendago.",
+      "nameLines": [
+        "Ariel",
+        "Levi"
+      ],
+      "subtitle": "Video editor, motion designer & graphic designer based in Haifa.",
       "cta": "View Work ↓"
     },
     "about": {
@@ -19,7 +22,14 @@
         "I'm passionate about storytelling through video editing, motion design, graphic design, image-making, and film. I love bringing ideas to life with bold visuals and thoughtful movement."
       ]
     },
-    "skills": ["After Effects", "Premiere", "Illustrator", "Photoshop", "Indesign", "AI Tools"],
+    "skills": [
+      "After Effects",
+      "Premiere",
+      "Illustrator",
+      "Photoshop",
+      "Indesign",
+      "AI Tools"
+    ],
     "sections": [
       {
         "id": "ads",
@@ -47,6 +57,15 @@
         "cta": "View Personal",
         "href": "/personal",
         "flip": false
+      },
+      {
+        "id": "photography",
+        "label": "Photography",
+        "title": "Photography",
+        "description": "A collection of pictures taken over the years — film and digital.",
+        "cta": "View Photography",
+        "href": "/photography",
+        "flip": true
       }
     ]
   },
@@ -58,17 +77,33 @@
         "id": "kendago",
         "label": "Kendago · 2021–Present",
         "videoIds": [
-          "7ezyeseVwIY", "Lw_FqPFPZdB", "Vk83a5ICcCx", "8cQatIZUiU7",
-          "BmPjyGeSdGp", "JQjk3y9vszF", "6C-bJcB9Lsy", "FVoL6sKFkuy",
-          "GKBBBXBGaWG", "4MwVaw7LkcQ", "4-dBxBv9X9f", "MEIU6jPiERX", "PTSWNxKr6PC"
+          "7ezyeseVwIY",
+          "Lw_FqPFPZdB",
+          "Vk83a5ICcCx",
+          "8cQatIZUiU7",
+          "BmPjyGeSdGp",
+          "JQjk3y9vszF",
+          "6C-bJcB9Lsy",
+          "FVoL6sKFkuy",
+          "GKBBBXBGaWG",
+          "4MwVaw7LkcQ",
+          "4-dBxBv9X9f",
+          "MEIU6jPiERX",
+          "PTSWNxKr6PC"
         ]
       },
       {
         "id": "lightricks",
         "label": "Lightricks · 2020–2021",
         "videoIds": [
-          "92aKAX-ovZ6", "2oEeE4wMu3P", "-z-S327LUPa", "RSSp38vySt8",
-          "Lz_HQgYa96_", "Eyq5g7aeD9Q", "P3XCgyKnJyD", "TDqrMttheVf"
+          "92aKAX-ovZ6",
+          "2oEeE4wMu3P",
+          "-z-S327LUPa",
+          "RSSp38vySt8",
+          "Lz_HQgYa96_",
+          "Eyq5g7aeD9Q",
+          "P3XCgyKnJyD",
+          "TDqrMttheVf"
         ]
       }
     ]
@@ -84,10 +119,12 @@
         "year": "2021",
         "category": "Film",
         "description": "My final project at Bezalel. Animated clip about our dreams — frame by frame technique. The clip emphasizes the stream of consciousness and the irrational randomness we experience in dreams. Based on real dreams.",
-        "videoIds": ["I6PrBomL2NK"],
+        "videoIds": [
+          "I6PrBomL2NK"
+        ],
         "images": [],
-        "externalLink": null,
-        "isLast": false
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "asgardia",
@@ -96,14 +133,25 @@
         "year": "2020",
         "category": "Motion",
         "description": "Asgardia — a city in the sky. A branding campaign for a micronation event celebrating the relocation to space. What will you take to space? Includes motion, invitation print and flying tickets.",
-        "videoIds": ["IokFuJUGk6k"],
-        "images": [
-          { "type": "placeholder", "label": "Print materials coming soon" },
-          { "type": "placeholder", "label": "Invitation design" },
-          { "type": "placeholder", "label": "Flying ticket" }
+        "videoIds": [
+          "IokFuJUGk6k"
         ],
-        "externalLink": null,
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Print materials coming soon"
+          },
+          {
+            "type": "placeholder",
+            "label": "Invitation design"
+          },
+          {
+            "type": "placeholder",
+            "label": "Flying ticket"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "banana-fish",
@@ -113,9 +161,14 @@
         "category": "Motion",
         "description": "Title sequence design inspired by J.D. Salinger's short story. Typography, motion and atmosphere.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/a-perfect-day-for-banana-fish-title-sequence" },
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "hitchcock-index",
@@ -125,9 +178,14 @@
         "category": "Print",
         "description": "A curated index of Alfred Hitchcock's films — editorial layout and graphic design.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/hitchcock-drive-in" },
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "disney-villains",
@@ -137,9 +195,14 @@
         "category": "Illustration",
         "description": "A full set of illustrated cards featuring Disney villains, designed as a playable card game.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/disney-villains-card-game-illustrations" },
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "mgmt-posters",
@@ -149,9 +212,14 @@
         "category": "Print",
         "description": "Poster design series inspired by the band MGMT.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/mgmt-posters" },
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "hitchcock-booklet",
@@ -161,9 +229,14 @@
         "category": "Print",
         "description": "A designed booklet exploring the visual language of Alfred Hitchcock's films.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/alfred-hitchcock-booklet" },
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "indira-gandhi",
@@ -173,9 +246,14 @@
         "category": "Print",
         "description": "A typographic and photographic booklet about the life of Indira Gandhi.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/indira-gandhi-booklet" },
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "illustrated-posters",
@@ -185,9 +263,14 @@
         "category": "Illustration",
         "description": "A series of illustrated posters reimagining classic films.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/illustrated-movie-posters" },
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "psychedelic-zoo",
@@ -197,9 +280,14 @@
         "category": "Illustration",
         "description": "Animals reimagined through a psychedelic lens — a series of illustrations.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/psychedelic-zoo" },
-        "isLast": false
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "gifs",
@@ -209,9 +297,14 @@
         "category": "Motion",
         "description": "A collection of animated GIFs made during my studies at Bezalel.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/gif-s" },
-        "isLast": true
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary"
+          }
+        ],
+        "isLast": true,
+        "extraImages": []
       }
     ]
   },
@@ -226,22 +319,13 @@
         "year": "2025",
         "category": "Motion",
         "description": null,
-        "videoIds": ["LpBI8yJMCIX", "-ZSMLSX7Q_9"],
+        "videoIds": [
+          "LpBI8yJMCIX",
+          "-ZSMLSX7Q_9"
+        ],
         "images": [],
-        "externalLink": null,
-        "isLast": false
-      },
-      {
-        "id": "photography",
-        "num": "02",
-        "title": "Photography",
-        "year": "2025",
-        "category": "Film & Digital",
-        "description": "One of my passions is photography. A collection of pictures taken over the years — some are film photography.",
-        "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload photos via Cloudinary to display here" }],
-        "externalLink": { "label": "View full photography series →", "href": "https://arielefraim.myportfolio.com/photography" },
-        "isLast": false
+        "isLast": false,
+        "extraImages": []
       },
       {
         "id": "mix",
@@ -251,9 +335,37 @@
         "category": "Mixed",
         "description": "These are things I made for myself — No deadlines, no approvals — just me, some creative curiosity, and a few late-night ideas that turned into something cool.",
         "videoIds": [],
-        "images": [{ "type": "placeholder", "label": "Upload images via Cloudinary to display here" }],
-        "externalLink": { "label": "View on Adobe Portfolio →", "href": "https://arielefraim.myportfolio.com/mix" },
-        "isLast": true
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload images via Cloudinary to display here"
+          }
+        ],
+        "isLast": true,
+        "extraImages": []
+      }
+    ]
+  },
+  "photography": {
+    "title": "Photography",
+    "description": "One of my passions is photography. A collection of pictures taken over the years — some are film photography.",
+    "projects": [
+      {
+        "id": "photography",
+        "num": "01",
+        "title": "Photography",
+        "year": "2025",
+        "category": "Film & Digital",
+        "description": "One of my passions is photography. A collection of pictures taken over the years — some are film photography.",
+        "videoIds": [],
+        "images": [
+          {
+            "type": "placeholder",
+            "label": "Upload photos via Cloudinary to display here"
+          }
+        ],
+        "isLast": true,
+        "extraImages": []
       }
     ]
   }

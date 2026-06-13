@@ -7,7 +7,7 @@ import content from '@/data/content';
 
 export const metadata: Metadata = {
   title: 'Ariel Levi — Portfolio',
-  description: 'Video editor, motion designer & graphic designer based in Haifa. Creative Lead at Kendago.',
+  description: 'Video editor, motion designer & graphic designer based in Haifa.',
 };
 
 export default function HomePage() {

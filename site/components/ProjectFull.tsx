@@ -1,9 +1,15 @@
+'use client';
+
+import { useState } from 'react';
 import VideoGrid from './VideoGrid';
 import ImageRow from './ImagePlaceholder';
 import styles from './ProjectFull.module.css';
 import type { Project } from '@/types';
 
 export default function ProjectFull({ project }: { project: Project }) {
+  const [expanded, setExpanded] = useState(false);
+  const hasMore = project.extraImages.length > 0;
+
   return (
     <article
       className={`${styles.proj} ${project.isLast ? styles.last : ''}`}
@@ -33,12 +39,16 @@ export default function ProjectFull({ project }: { project: Project }) {
         <ImageRow images={project.images} />
       )}
 
-      {project.externalLink && (
-        <p className={styles.link}>
-          <a href={project.externalLink.href} target="_blank" rel="noopener noreferrer">
-            {project.externalLink.label}
-          </a>
-        </p>
+      {hasMore && (
+        <>
+          {expanded && <ImageRow images={project.extraImages} />}
+          <button
+            className={styles.viewMore}
+            onClick={() => setExpanded(v => !v)}
+          >
+            {expanded ? 'View less ↑' : 'View more ↓'}
+          </button>
+        </>
       )}
     </article>
   );

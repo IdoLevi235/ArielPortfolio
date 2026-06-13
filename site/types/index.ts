@@ -29,11 +29,6 @@ export interface ProjectImage {
   alt?: string;
 }
 
-export interface ExternalLink {
-  label: string;
-  href: string;
-}
-
 export interface Project {
   id: string;
   num: string;
@@ -43,7 +38,7 @@ export interface Project {
   description: string | null;
   videoIds: string[];
   images: ProjectImage[];
-  externalLink: ExternalLink | null;
+  extraImages: ProjectImage[];
   isLast: boolean;
 }
 
@@ -58,4 +53,5 @@ export interface Content {
   ads: { title: string; description: string; groups: VideoGroup[] };
   bezalel: { title: string; description: string; projects: Project[] };
   personal: { title: string; description: string; projects: Project[] };
+  photography: { title: string; description: string; projects: Project[] };
 }

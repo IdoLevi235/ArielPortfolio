@@ -13,10 +13,10 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: 'Ariel Levi — Portfolio',
-  description: 'Video editor, motion designer & graphic designer based in Haifa. Creative Lead at Kendago.',
+  description: 'Video editor, motion designer & graphic designer based in Haifa. ',
   openGraph: {
     title: 'Ariel Levi — Portfolio',
-    description: 'Video editor, motion designer & graphic designer based in Haifa. Creative Lead at Kendago.',
+    description: 'Video editor, motion designer & graphic designer based in Haifa. ',
     type: 'website',
   },
 };
