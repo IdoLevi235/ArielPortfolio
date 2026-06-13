@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import InnerHero from '@/components/InnerHero';
-import VideoGrid from '@/components/VideoGrid';
+import MediaGrid from '@/components/MediaGrid';
 import content from '@/data/content';
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function AdsPage() {
       <InnerHero title={ads.title} description={ads.description} />
 
       {ads.groups.map(group => (
-        <VideoGrid key={group.id} videoIds={group.videoIds} label={group.label} />
+        <MediaGrid key={group.id} items={group.media} label={group.label} section />
       ))}
     </div>
   );

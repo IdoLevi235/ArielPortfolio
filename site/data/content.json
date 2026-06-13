@@ -76,34 +76,118 @@
       {
         "id": "kendago",
         "label": "Kendago · 2021–Present",
-        "videoIds": [
-          "7ezyeseVwIY",
-          "Lw_FqPFPZdB",
-          "Vk83a5ICcCx",
-          "8cQatIZUiU7",
-          "BmPjyGeSdGp",
-          "JQjk3y9vszF",
-          "6C-bJcB9Lsy",
-          "FVoL6sKFkuy",
-          "GKBBBXBGaWG",
-          "4MwVaw7LkcQ",
-          "4-dBxBv9X9f",
-          "MEIU6jPiERX",
-          "PTSWNxKr6PC"
+        "media": [
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "7ezyeseVwIY"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "Lw_FqPFPZdB"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "Vk83a5ICcCx"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "8cQatIZUiU7"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "BmPjyGeSdGp"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "JQjk3y9vszF"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "6C-bJcB9Lsy"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "FVoL6sKFkuy"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "GKBBBXBGaWG"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "4MwVaw7LkcQ"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "4-dBxBv9X9f"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "MEIU6jPiERX"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "PTSWNxKr6PC"
+          }
         ]
       },
       {
         "id": "lightricks",
         "label": "Lightricks · 2020–2021",
-        "videoIds": [
-          "92aKAX-ovZ6",
-          "2oEeE4wMu3P",
-          "-z-S327LUPa",
-          "RSSp38vySt8",
-          "Lz_HQgYa96_",
-          "Eyq5g7aeD9Q",
-          "P3XCgyKnJyD",
-          "TDqrMttheVf"
+        "media": [
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "92aKAX-ovZ6"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "2oEeE4wMu3P"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "-z-S327LUPa"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "RSSp38vySt8"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "Lz_HQgYa96_"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "Eyq5g7aeD9Q"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "P3XCgyKnJyD"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "TDqrMttheVf"
+          }
         ]
       }
     ]
@@ -119,12 +203,14 @@
         "year": "2021",
         "category": "Film",
         "description": "My final project at Bezalel. Animated clip about our dreams — frame by frame technique. The clip emphasizes the stream of consciousness and the irrational randomness we experience in dreams. Based on real dreams.",
-        "videoIds": [
-          "I6PrBomL2NK"
+        "media": [
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "I6PrBomL2NK"
+          }
         ],
-        "images": [],
-        "isLast": false,
-        "extraImages": []
+        "isLast": false
       },
       {
         "id": "asgardia",
@@ -133,25 +219,14 @@
         "year": "2020",
         "category": "Motion",
         "description": "Asgardia — a city in the sky. A branding campaign for a micronation event celebrating the relocation to space. What will you take to space? Includes motion, invitation print and flying tickets.",
-        "videoIds": [
-          "IokFuJUGk6k"
-        ],
-        "images": [
+        "media": [
           {
-            "type": "placeholder",
-            "label": "Print materials coming soon"
-          },
-          {
-            "type": "placeholder",
-            "label": "Invitation design"
-          },
-          {
-            "type": "placeholder",
-            "label": "Flying ticket"
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "IokFuJUGk6k"
           }
         ],
-        "isLast": false,
-        "extraImages": []
+        "isLast": false
       },
       {
         "id": "banana-fish",
@@ -160,15 +235,8 @@
         "year": "2020",
         "category": "Motion",
         "description": "Title sequence design inspired by J.D. Salinger's short story. Typography, motion and atmosphere.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": false,
-        "extraImages": []
+        "media": [],
+        "isLast": false
       },
       {
         "id": "hitchcock-index",
@@ -177,15 +245,8 @@
         "year": "2021",
         "category": "Print",
         "description": "A curated index of Alfred Hitchcock's films — editorial layout and graphic design.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": false,
-        "extraImages": []
+        "media": [],
+        "isLast": false
       },
       {
         "id": "disney-villains",
@@ -194,15 +255,8 @@
         "year": "2019",
         "category": "Illustration",
         "description": "A full set of illustrated cards featuring Disney villains, designed as a playable card game.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": false,
-        "extraImages": []
+        "media": [],
+        "isLast": false
       },
       {
         "id": "mgmt-posters",
@@ -211,15 +265,8 @@
         "year": "2020",
         "category": "Print",
         "description": "Poster design series inspired by the band MGMT.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": false,
-        "extraImages": []
+        "media": [],
+        "isLast": false
       },
       {
         "id": "hitchcock-booklet",
@@ -228,15 +275,8 @@
         "year": "2019",
         "category": "Print",
         "description": "A designed booklet exploring the visual language of Alfred Hitchcock's films.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": false,
-        "extraImages": []
+        "media": [],
+        "isLast": false
       },
       {
         "id": "indira-gandhi",
@@ -245,15 +285,8 @@
         "year": "2019",
         "category": "Print",
         "description": "A typographic and photographic booklet about the life of Indira Gandhi.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": false,
-        "extraImages": []
+        "media": [],
+        "isLast": false
       },
       {
         "id": "illustrated-posters",
@@ -262,15 +295,8 @@
         "year": "2020",
         "category": "Illustration",
         "description": "A series of illustrated posters reimagining classic films.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": false,
-        "extraImages": []
+        "media": [],
+        "isLast": false
       },
       {
         "id": "psychedelic-zoo",
@@ -279,15 +305,8 @@
         "year": "2020",
         "category": "Illustration",
         "description": "Animals reimagined through a psychedelic lens — a series of illustrations.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": false,
-        "extraImages": []
+        "media": [],
+        "isLast": false
       },
       {
         "id": "gifs",
@@ -296,15 +315,8 @@
         "year": "2021",
         "category": "Motion",
         "description": "A collection of animated GIFs made during my studies at Bezalel.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary"
-          }
-        ],
-        "isLast": true,
-        "extraImages": []
+        "media": [],
+        "isLast": true
       }
     ]
   },
@@ -319,13 +331,19 @@
         "year": "2025",
         "category": "Motion",
         "description": null,
-        "videoIds": [
-          "LpBI8yJMCIX",
-          "-ZSMLSX7Q_9"
+        "media": [
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "LpBI8yJMCIX"
+          },
+          {
+            "kind": "embed",
+            "provider": "adobe",
+            "id": "-ZSMLSX7Q_9"
+          }
         ],
-        "images": [],
-        "isLast": false,
-        "extraImages": []
+        "isLast": false
       },
       {
         "id": "mix",
@@ -334,15 +352,8 @@
         "year": "2020–2025",
         "category": "Mixed",
         "description": "These are things I made for myself — No deadlines, no approvals — just me, some creative curiosity, and a few late-night ideas that turned into something cool.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload images via Cloudinary to display here"
-          }
-        ],
-        "isLast": true,
-        "extraImages": []
+        "media": [],
+        "isLast": true
       }
     ]
   },
@@ -357,15 +368,8 @@
         "year": "2025",
         "category": "Film & Digital",
         "description": "One of my passions is photography. A collection of pictures taken over the years — some are film photography.",
-        "videoIds": [],
-        "images": [
-          {
-            "type": "placeholder",
-            "label": "Upload photos via Cloudinary to display here"
-          }
-        ],
-        "isLast": true,
-        "extraImages": []
+        "media": [],
+        "isLast": true
       }
     ]
   }

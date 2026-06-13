@@ -1,14 +1,17 @@
 'use client';
 
 import { useState } from 'react';
-import VideoGrid from './VideoGrid';
-import ImageRow from './ImagePlaceholder';
+import MediaGrid from './MediaGrid';
 import styles from './ProjectFull.module.css';
 import type { Project } from '@/types';
 
 export default function ProjectFull({ project }: { project: Project }) {
   const [expanded, setExpanded] = useState(false);
-  const hasMore = project.extraImages.length > 0;
+
+  const total = project.media.length;
+  const previewCount = project.previewCount ?? total;
+  const hasMore = total > previewCount;
+  const visible = expanded ? project.media : project.media.slice(0, previewCount);
 
   return (
     <article
@@ -27,28 +30,15 @@ export default function ProjectFull({ project }: { project: Project }) {
         <p className={styles.desc}>{project.description}</p>
       )}
 
-      {project.videoIds.length > 0 && (
-        <VideoGrid
-          videoIds={project.videoIds}
-          single={project.videoIds.length === 1}
-          compact
-        />
-      )}
-
-      {project.images.length > 0 && (
-        <ImageRow images={project.images} />
-      )}
+      <MediaGrid items={visible} />
 
       {hasMore && (
-        <>
-          {expanded && <ImageRow images={project.extraImages} />}
-          <button
-            className={styles.viewMore}
-            onClick={() => setExpanded(v => !v)}
-          >
-            {expanded ? 'View less ↑' : 'View more ↓'}
-          </button>
-        </>
+        <button
+          className={styles.viewMore}
+          onClick={() => setExpanded(v => !v)}
+        >
+          {expanded ? 'View less ↑' : 'View more ↓'}
+        </button>
       )}
     </article>
   );

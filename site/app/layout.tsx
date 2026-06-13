@@ -3,6 +3,7 @@ import { DM_Sans } from 'next/font/google';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import BackToTop from '@/components/BackToTop';
+import SiteChrome from '@/components/SiteChrome';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -25,12 +26,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={dmSans.variable} data-scroll-behavior="smooth">
       <body>
-        <Nav />
+        <SiteChrome>
+          <Nav />
+        </SiteChrome>
         <main style={{ maxWidth: 'var(--max-width)', margin: '0 auto', width: '100%' }}>
           {children}
         </main>
-        <Footer />
-        <BackToTop />
+        <SiteChrome>
+          <Footer />
+          <BackToTop />
+        </SiteChrome>
       </body>
     </html>
   );

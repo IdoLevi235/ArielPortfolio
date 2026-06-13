@@ -1,0 +1,103 @@
+.pane {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #fffbea;
+  border-bottom: 0.5px solid #f0e0a0;
+  font-size: 12px;
+  color: #7a6a20;
+}
+
+.noticeIcon {
+  font-size: 14px;
+}
+
+.frame {
+  background: white;
+  border-top: none;
+  overflow: auto;
+  max-height: calc(100vh - 180px);
+}
+
+.previewContent {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.previewSection {
+  padding: 40px var(--page-pad);
+}
+
+.aboutCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.previewSectTitle {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-mid);
+  margin-bottom: 16px;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+/* Site settings table */
+.sitePreview {
+  padding: 40px var(--page-pad);
+}
+
+.sitePreviewTitle {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.siteTable {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+}
+
+.siteRow {
+  border-bottom: 0.5px solid var(--border);
+}
+
+.siteKey {
+  padding: 10px 16px 10px 0;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink-mid);
+  width: 140px;
+  vertical-align: top;
+}
+
+.siteVal {
+  padding: 10px 0;
+  font-size: 14px;
+  color: var(--ink);
+  word-break: break-all;
+}

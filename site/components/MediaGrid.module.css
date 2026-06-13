@@ -13,6 +13,10 @@
   border-bottom: 0.5px solid var(--border);
 }
 
+.compact {
+  margin-top: 20px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -24,8 +28,23 @@
   max-width: 680px;
 }
 
-.compact {
-  margin-top: 20px;
+.img,
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #111;
+  display: block;
+}
+
+.img {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.img:hover {
+  opacity: 0.88;
 }
 
 @media (max-width: 768px) {

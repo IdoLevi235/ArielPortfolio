@@ -11,7 +11,23 @@
       "PowerShell($r = Invoke-WebRequest -Uri \"http://localhost:3000/api/content\" -UseBasicParsing -TimeoutSec 10 ; $json = $r.Content | ConvertFrom-Json ; Write-Output \"Site name: $\\($json.site.name\\)\" ; Write-Output \"Bezalel projects: $\\($json.bezalel.projects.Count\\)\" ; Write-Output \"Ads groups: $\\($json.ads.groups.Count\\)\")",
       "Bash(gh auth *)",
       "Bash(node -e ' *)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Bash(git commit -m ' *)",
+      "Bash(npm -v)",
+      "Bash(npm --prefix site install next-auth@beta @octokit/rest cloudinary next-cloudinary zod @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(git -c core.safecrlf=false commit -q -m ' *)",
+      "Bash(npm run *)",
+      "Bash(echo \"started dev server, pid $!\")",
+      "Bash(curl -s -o /dev/null -w \"  status=%{http_code}\\\\n\" http://localhost:3000/admin)",
+      "Bash(curl -s -o /dev/null -w \"  status=%{http_code}\\\\n\" http://localhost:3000/signin)",
+      "Bash(curl -s http://localhost:3000/api/content -o /tmp/content_get.json -w \"  status=%{http_code} bytes=%{size_download}\\\\n\")",
+      "Bash(curl -s -X PUT http://localhost:3000/api/content -H \"content-type: application/json\" --data-binary @/tmp/content_get.json -w \"  status=%{http_code}\\\\n\")",
+      "Bash(curl -s -X PUT http://localhost:3000/api/content -H \"content-type: application/json\" --data '{\"foo\":1}' -w \"\\\\n  status=%{http_code}\\\\n\")",
+      "PowerShell(Get-NetTCPConnection *)",
+      "Bash(git check-ignore *)",
+      "Bash(git reset *)"
     ]
   }
 }
